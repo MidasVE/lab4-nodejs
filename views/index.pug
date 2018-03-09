@@ -5,16 +5,17 @@ html(lang='en')
         meta(name='viewport', content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
         meta(http-equiv='X-UA-Compatible', content='ie=edge')
         title Kweeni | Stel een vraag
-        link(rel='stylesheet', href='normalize.css')
-        link(rel='stylesheet', href='main.css')
+        style
+            include normalize.css
+            include main.css
     body.kweeni
         nav
             .container
-                img.logo(src='images/logo.svg', alt='')
+                img.logo(src='/images/logo.svg', alt='')
                 .user
                     span Anneke Kodeur
                     a(href='') Log uit
-                    img.user-avatar(src='images/user8.png', alt='')
+                    img.user-avatar(src='/images/user8.png', alt='')
         header
             h1
                 | Iets kweeni hoe moeilijk?
