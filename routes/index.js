@@ -3,7 +3,7 @@ const path = require('path');
 
 module.exports = (app) => {
     app.get('/kweeni', (req, res) => {
-        res.send('Hello World')
+        res.render('index');
     });
 
     glob.sync('./routes/!(index).js', {
