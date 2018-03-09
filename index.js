@@ -7,6 +7,7 @@ const config = {
 
 app.set('views', './views');
 app.set('view engine', 'pug');
+app.use(express.static(__dirname + '/public'));
 
 require('./routes/')(app);
 
